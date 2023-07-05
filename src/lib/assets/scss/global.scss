@@ -1,0 +1,29 @@
+@use './vars';
+
+body {
+	margin: auto;
+	color: var(--color-text);
+	// max-width: vars.$max-width;
+}
+
+a{
+	color: var(--color-text);
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+	height: calc(var(--eighthNote) * 0.25);
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+	/* the "track" of the bar - great for customizing "background" colors */
+	background: var(--paper);
+}
+
+::-webkit-scrollbar-thumb {
+	/* the actual draggable element, the star of the show! */
+	background: gray;
+	opacity: 0.5;
+	border-radius: 0.25rem;
+}

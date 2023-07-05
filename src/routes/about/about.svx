@@ -1,0 +1,42 @@
+# Who am I?
+<div class="profile-pic">
+<img src="/images/pic.jpg" alt="A white guy with medium-long hair and a short beard, smiling" width="150"/>
+</div>
+
+🎓 **Study-wise** I am a traveling student of computer science at Aalto University, 
+culminating my Master Studies in Human-Computer Interaction and Design in the joint university program of EIT Digital. 
+My first year of master was in Politecnico di Milano, Italy. 
+My bachelor's degree was from the University of Catania, my hometown.
+
+
+👨‍💻 **Professionally** I have mainly been a front-end developer, 
+working on MVP for the startup loop.ai. 
+My passion for video games landed me a job as an HDR gameplay curator for Rehjong Tech. 
+and LG Display, which spun off into coding and user test interface in Python. 
+I want to see myself as a jack of all trades, and master of some *(in the future)*.
+
+
+🎮 **Hobby-wise** I am a hobby coder, a comic/manga reader, an animation fan, and a video game aficionado. 
+I always love a good bike ride or a hike in nature.
+
+
+<script>
+</script>
+
+<style lang="scss">
+    /*Crop image and center to circle*/
+    .profile-pic{
+        border-radius: 100%;
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        float: right;
+        border-radius: 100%;
+        margin-left:-20px;
+        position: relative;
+        left: 5%;
+    }
+    
+    </style>

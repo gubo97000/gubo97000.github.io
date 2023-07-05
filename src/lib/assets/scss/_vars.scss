@@ -1,0 +1,19 @@
+$max-width: 1200px;
+
+:root{
+    // Palette default dark mode with pink accent
+    --color-primary: #1e1e1e;
+    --color-secondary: #2e2e2e;
+    --color-tertiary: #3e3e3e;
+
+    --color-accent: #ff00ff;
+    --color-accent-light: #ff00ff;
+    --color-accent-dark: #ff00ff;
+
+    --color-text: #ffffff;
+
+    --color-link: #ff00ff;
+    --paper:  var(--color-primary);
+    --ink: var(--color-text);
+
+}
