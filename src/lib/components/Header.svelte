@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Logo from '$lib/components/Logo.svelte';
+	import Icon from '@iconify/svelte';
 </script>
 <header>
 	<a href="/">
@@ -17,7 +18,7 @@
 				<a href="/projects">Projects</a>
 			</li>
 			<li>
-				<a href="/GuidoBordonaro_cv.pdf">CV</a>
+				<a href="/GuidoBordonaro_cv.pdf"><Icon icon="basil:file-download-solid" inline={true} />CV</a>				
 			</li>
 			<!-- <li>
 				<a href="/blog">Blog</a>
