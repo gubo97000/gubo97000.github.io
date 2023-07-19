@@ -23,10 +23,11 @@
 	<div class="flow-container">
 		{#each elems as p, i}
 			<div
-				class="pills {(i % 2 === 0 ? 'even' : 'odd')}"
+				class="pills {(i % 2 === 0 ? 'mobile' : 'out')}"
 				style="
-			animation: flow {p.height ** 1.5 * 500}s linear infinite;
-			filter: blur({blurPercent(1 - i / (elems.length + 100)) * 4}px);
+			animation: flow {p.height ** 1.5 * 500}s linear infinite,
+				fadeIn 1s ease-in-out {i / (elems.length)}s both;
+			<!-- filter: blur({blurPercent(1 - i / (elems.length + 100)) * 4}px); -->
 			"
 			>
 				<div
@@ -40,7 +41,6 @@
             top: {p.top}rem;
             background: {p.color};
             border-radius: 20px;
-            opacity: 1;
             "
 				/>
 				<div
@@ -54,7 +54,6 @@
             top: {p.top}rem;
             background: {p.color};
             border-radius: 20px;
-            opacity: 1;
             "
 				/>
 			</div>
@@ -69,12 +68,6 @@
 		height: 40px;
 		overflow-x: clip;
 	}
-	.flow-container div {
-		width: 100%;
-		height: 50px;
-		/* background-color: red; */
-		position: absolute;
-	}
 	.second {
 		transform: translateX(-100vw);
 	}
@@ -87,10 +80,27 @@
 			transform: translateX(100vw);
 		}
 	}
-	
+
+	@keyframes -global-fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
 	@media (max-width: 600px) {
-		.odd {
+		.out {
 			display: none;
 		}
+		// .even {
+		// 	display: none;
+		// }
+		.pills {
+			// animation-play-state: paused !important;
+			filter: blur(0px) !important;
+		}
+
 	}
 </style>

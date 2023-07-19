@@ -28,6 +28,8 @@
 				<div>
 					<h3>Credits</h3>
 					<p>Made with Svelte</p>
+					<p>Inspired by <a href="https://joshcollinsworth.com/" target="_blank">Josh Collinsworth</a> beautiful website.
+					</p>
 				</div>
 			</div>
 		</div>
