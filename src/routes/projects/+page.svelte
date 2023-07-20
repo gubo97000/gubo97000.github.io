@@ -18,12 +18,12 @@
 
 	<h1>Explora!</h1>
 	<h3>University project for the course of Advanced User Interfaces.</h3>
-	The goal of the project was to create an interactive experience for atypical children utilizing the <a
+	The goal of the project was to create an interactive experience for atypical children utilizing the<a
 		href="https://i3lab.polimi.it/research/projects/#SS"
 		target="_blank">MagikRoom</a
 	>
-	environment designed the game balancing the generative and the puzzle content, developed with
-	Unity and user tested. The project was presented at the
+	environment designed the game balancing the generative and the puzzle content, developed with Unity
+	and user tested. The project was presented at the
 	<a href="https://www.learntechlib.org/p/221360/" target="_blank">EdMedia+</a>
 	conference.
 	<h4>Skill:</h4>
@@ -35,16 +35,32 @@
 	<h1>More Projects</h1>
 	<ul>
 		<li>
-			<a href="https://github.com/gubo97000/HYP-Project" target="_blank"> 
+			<a href="https://github.com/gubo97000/HYP-Project" target="_blank">
 				<b>Towny</b>
-			</a> 
+			</a>
 			- Website built for the course of Hypermedia Applications.
 		</li>
 		<li>
-			<a href="https://github.com/gubo97000/potplayer-user-test-syncer" target="_blank"> 
+			<a href="https://github.com/gubo97000/potplayer-user-test-syncer" target="_blank">
 				<b>PotPlayer User Test Syncer</b>
 			</a>
 			- Tool for controlling and synching multiple instances of PotPlayer during user tests.
+		</li>
+		<li>
+			<b>Controverso</b>
+			- WebMagazine managed by young people of my hometown. Built from ground up the Wordpress
+			website with widgets and custom theme. Managed SEO, social media and analytics.
+		</li>
+		<li>
+			<a href="https://magazindie.it" target="_blank">
+				<b>MagazIndie</b>
+			</a>
+			- Wordpress website for a nascent italian indie music magazine. 
+		</li>
+		<li>
+			<b>AutoLootBot</b>
+			- A Chrome extension to automate telegram interactions with the telegram game LootBot.
+		</li>
 	</ul>
 </div>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { generate, randomNormal } from "$lib/utils/randomGenerators";
+	import { generate, randomNormal } from '$lib/utils/randomGenerators';
 
 	// Generate 100 particles
 	let elems = generate(20, [
@@ -35,7 +35,7 @@
                             background: rgb({Math.random() * 255}, {Math.random() *
 						255}, {Math.random() * 255});
                             border-radius: 20px;
-							animation-delay: {i * 0.01}s;
+							transition-delay: {i * 0.015}s;
                             "
 				/>
 			{/each}
@@ -81,58 +81,78 @@
 			z-index: -1;
 			left: -5%;
 			top: 5%;
-			transform-origin: left;
-			animation:  button-pill-strechOut 0.3s ease-in both,
+			transform: scaleX(0%);
+			// opacity: 0;
+			transform-origin: right;
+			// animation:  button-pill-strechOut 0.3s ease-in both;
+			transition: transform 0.2s ease-in, 
+			// opacity 0.5s ease-out
+			;
+			transition-delay: 0.3s;
 		}
 	}
 
 	.pill {
-		animation:  button-pill-strechOut 0.3s both;
-		transform-origin: left;
+		transform: scaleX(0%);
+		// opacity:0;
+		// animation: button-pill-strechOut 0.3s ease-out forwards;
+		transition: transform 0.1s ease-in, opacity 0.2s ease-in;
+		transform-origin: right;
 	}
 
 	//Animation of pills when hover on container
 	.container:hover {
 		.pill {
-			animation:  button-pill-strechIn 0.3s both;
+			transition-timing-function: ease-in;
+			transform-origin: left;
+			transform: scaleX(100%);
+			opacity: 1;
+			// animation:  button-pill-strechIn 0.3s both;
 		}
 		.text::before {
-			animation:  button-pill-strechIn 0.3s both;
+			// animation: button-pill-strechIn 0.3s both;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-in;
+			transition-delay: 0s;
+			transform-origin: left;
+			transform: scaleX(100%);
+			opacity: 1;
 		}
 	}
 
 	//Selected state
 	.active {
 		.pill {
-			animation: button-pill-strechIn 0s both;
-			font-weight: 400;
+			transform: scaleX(100%);
+			opacity: 1;
 		}
 		.text::before {
-			animation: button-pill-strechIn 0s both;
+			transform: scaleX(100%);
+			opacity: 1;
 			background-color: var(--color-accent);
 		}
 	}
 
-	@keyframes -global-button-pill-strechIn {
-		0% {
-			transform: scaleX(0);
-			opacity: 0;
-		}
-		100% {
-			transform: scaleX(100%);
-			opacity: 1;
-		}
-	}
-	@keyframes -global-button-pill-strechOut {
-		0% {
-			transform: scaleX(100%);
-			transform-origin: right;
-			opacity: 1;
-		}
-		100% {
-			transform: scaleX(0);
-			transform-origin: right;
-			opacity: 0;
-		}
-	}
+	// @keyframes -global-button-pill-strechIn {
+	// 	0% {
+	// 		transform: scaleX(0);
+	// 		opacity: 0;
+	// 	}
+	// 	100% {
+	// 		transform: scaleX(100%);
+	// 		opacity: 1;
+	// 	}
+	// }
+	// @keyframes -global-button-pill-strechOut {
+	// 	0% {
+	// 		transform: scaleX(100%);
+	// 		transform-origin: right;
+	// 		opacity: 1;
+	// 	}
+	// 	100% {
+	// 		transform: scaleX(0);
+	// 		transform-origin: right;
+	// 		opacity: 0;
+	// 	}
+	// }
 </style>

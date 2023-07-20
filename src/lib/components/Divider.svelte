@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { expoIn as blurPercent } from 'svelte/easing';
-	console.log(blurPercent(0.2));
 	let generate = () => {
 		let elems = [];
 		for (let i = 0; i < 110; i++) {
