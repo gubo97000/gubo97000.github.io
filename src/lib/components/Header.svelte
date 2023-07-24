@@ -3,7 +3,6 @@
 	import Icon from '@iconify/svelte';
 	import Button from '$lib/components/Button.svelte';
 	import { page } from '$app/stores';
-	import MobileMenu from './MobileMenu.svelte';
 </script>
 
 <header>
