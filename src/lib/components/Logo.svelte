@@ -16,7 +16,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
     .cube__face--front :global(svg){
         width: 100%;
         height: 100%;}
@@ -32,6 +32,7 @@
 		height: 100px;
 		perspective: 600px;
         margin-left: 20px;
+		margin-bottom: 10px;
 	}
 
 	.cube {
@@ -67,4 +68,27 @@
 	.cube:hover {
 		transform: rotateY(-45deg);
 	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.cube {
+			transition: none;
+		}
+	}
+	//Media query
+	@media (max-width: 768px) {
+		.scene {
+			width: 75px;
+			height: 75px;
+			perspective: 600px;
+			margin-left: 0px;
+			margin-right: 73px;
+		}
+		.cube__face--front {
+			transform: rotateY(0deg) translateZ(17px);
+		}
+		.cube__face--right {
+			transform: rotateY(90deg) translateZ(37px);
+		}
+	}
+
 </style>

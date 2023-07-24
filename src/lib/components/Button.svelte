@@ -46,7 +46,8 @@
 <style lang="scss">
 	.container {
 		height: 50px;
-		width: 100px;
+		// min-width: 75px;
+		// max-width: 100px;
 		// border: 1px solid red;
 		position: relative;
 
@@ -67,8 +68,9 @@
 	.text {
 		margin: auto;
 		padding: 0 5px;
-		position: absolute;
+		position: inherit;
 		z-index: 1;
+		text-decoration: none;
 		// border: 1px solid green;
 
 		&::before {
